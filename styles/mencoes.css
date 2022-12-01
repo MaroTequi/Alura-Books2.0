@@ -1,0 +1,11 @@
+
+
+.mencoes {
+    border-top: solid black 1px;
+    padding: 1.5em;
+}
+
+.mencoes__titulo {
+    font-size: 1em;
+    font-weight: 400;
+}

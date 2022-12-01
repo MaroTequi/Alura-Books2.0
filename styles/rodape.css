@@ -1,0 +1,38 @@
+
+
+.rodape {
+    padding: 1.5em;
+}
+
+.rodape__titulo {
+    font-weight: 500;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    font-weight: 300;
+    color: var(--azul-gradiente);
+}
+
+.rodape__campo {
+    width: 100%;
+    border: solid black 2px;
+    border-radius: 24px;
+    box-sizing: border-box;
+    padding: 1em;
+    padding-left: 3.5em;    
+
+    color: var(--azul-gradiente);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.rodape__campo::placeholder {
+    background: url(../img/cartinha.svg) no-repeat;
+    background-position: 1.5em 50%;
+
+    color: var(--azul-gradiente);
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 100%;
+}

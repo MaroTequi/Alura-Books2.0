@@ -1,0 +1,38 @@
+@import url(./styles/cabecalho.css);
+@import url(./styles/banner.css);
+@import url(./styles/lancamentos.css);
+@import url(./styles/vendidos.css);
+@import url(./styles/visitados.css);
+@import url(./styles/rodape.css);
+@import url(./styles/mencoes.css);
+
+:root {
+    --azul-gradiente: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --laranja: #EB9B00;
+    --cinza-claro: #EBECEE;
+    --branco: white;
+
+    --fonte-quatorze: 14px;
+
+    --fonte-poppins: 'Poppins';
+}
+
+body {
+    font-family: var(--fonte-poppins);
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h5 {
+    color: var(--azul-gradiente);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+}
