@@ -2,3 +2,12 @@
     background: var(--cinza-claro);
     padding-bottom: 1em;
 }
+
+@media screen and (min-width: 1024px) {
+    .vendidos{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

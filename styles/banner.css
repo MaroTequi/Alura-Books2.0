@@ -36,3 +36,22 @@
     font-weight: 400;
     opacity: 100%;
 }
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        padding: 5em 0;
+    }
+
+    .banner__titulo {
+        font-size: 36px;
+    }
+
+    .banner__texto {
+        margin-top: 0.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .banner__buscador {
+        max-width: 476px;
+    }
+}

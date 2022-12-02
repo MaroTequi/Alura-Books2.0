@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>AluraBooks</title>
@@ -18,22 +21,23 @@
         <div class="cabecalho__esquerda">
             <input class="cabecalho__botao" id="botao__menu" type="checkbox">
             <label class="cabecalho__menu" for="botao__menu">
+                <span class="cabecalho__menu-img"></span>
                 <ul class="cabecalho__menu-lista">
                     <li class="cabecalho__menu-item cabecalho__menu-item-titulo">Categorias</li>
                     
-                    <li class="cabecalho__menu-item">
+                    <li class="cabecalho__menu-item cabecalho__menu-item-efeito">
                         <a href="">PROGRAMAÇÃO</a>
                     </li>
-                    <li class="cabecalho__menu-item">
+                    <li class="cabecalho__menu-item cabecalho__menu-item-efeito">
                         <a href="">FRONT-END</a>
                     </li>
-                    <li class="cabecalho__menu-item">
+                    <li class="cabecalho__menu-item cabecalho__menu-item-efeito">
                         <a href="">INFRAESTRUTURA</a>
                     </li>
-                    <li class="cabecalho__menu-item">
+                    <li class="cabecalho__menu-item cabecalho__menu-item-efeito">
                         <a href="">BUSINESS</a>
                     </li>
-                    <li class="cabecalho__menu-item">
+                    <li class="cabecalho__menu-item cabecalho__menu-item-efeito">
                         <a href="">DESIGN & UX</a>
                     </li>
                 </ul>
@@ -42,10 +46,45 @@
             <a href="#">
                 <img src="./img/Logo.svg" alt="Logo Apeperia">
             </a>
+
+            <h1 class="cabecalho__titulo"><strong>Alura</strong>Books</h1>
         </div>
 
+        <ul class="cabecalho__lista">
+            <input type="checkbox" name="menu__categorias" id="menu__categorias">
+            <label class="cabecalho__lista-menu" for="menu__categorias">
+                <li class="cabecalho__lista-item">CATEGORIAS</li>
+            </label>
+
+            <ul class="cabecalho__lista-opcoes">
+                <li class="cabecalho__lista-opcoes-item">
+                    <a href="">PROGRAMAÇÃO</a>
+                </li>
+                <li class="cabecalho__lista-opcoes-item">
+                    <a href="">FRONT-END</a>
+                </li>
+                <li class="cabecalho__lista-opcoes-item">
+                    <a href="">INFRAESTRUTURA</a>
+                </li>
+                <li class="cabecalho__lista-opcoes-item">
+                    <a href="">BUSINESS</a>
+                </li>
+                <li class="cabecalho__lista-opcoes-item">
+                    <a href="">DESIGN & UX</a>
+                </li>
+            </ul>
+
+            <li class="cabecalho__lista-item">
+                <a href="" class="cabecalho__lista-link">FAVORITOS</a>
+            </li>
+
+            <li class="cabecalho__lista-item">
+                <a href="" class="cabecalho__lista-link">MINHA ESTANTE</a>
+            </li>
+        </ul>
+
         <ul class="cabecalho__opcoes">
-            <li>
+            <li class="cabecalho__opcoes-coracao">
                 <a href="#"><img src="./img/Favoritos.svg" alt="Favoritos"></a>
             </li>
             <li>
@@ -99,6 +138,10 @@
                 </div>
             </div>
 
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev" id="swiper-button-prev"></div>
+            <div class="swiper-button-next" id="swiper-button-next"></div> 
+
             <div class="card">
                 <!-- Coluna 1 -->
                 <div class="card__coluna-um">
@@ -128,18 +171,21 @@
                 
             <!-- If we need pagination -->
             <div class="swiper-pagination" id="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev" id="swiper-button-prev"></div>
+            <div class="swiper-button-next" id="swiper-button-next"></div> 
             
             <!-- Slider main container -->
             <div class="swiper">
-
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
 
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="./img/livros/Acessibilidade.svg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/livros/Angular.svg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/livros/ApacheKafka.svg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/livros/Nodejs.svg" alt=""></div>
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./img/livros/Nodejs.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/livros/Angular.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/livros/ApacheKafka.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/livros/Acessibilidade.svg" alt=""></div>
                 </div>
             </div>
 
@@ -170,7 +216,7 @@
         <section class="visitados">
             <h5 class="visitados__titulo">TÓPICOS VISITADOS RECENTEMENTE</h5>
             <ul class="visitados__lista">
-                <li class="visitados__item">
+                <li class="visitados__item item__um">
                     <a href="" class="visitados__link">Android</a>
                 </li>
                 <li class="visitados__item">
@@ -185,10 +231,10 @@
                 <li class="visitados__item">
                     <a href="" class="visitados__link">HTML & CSS</a>
                 </li>
-                <li class="visitados__item">
+                <li class="visitados__item item__oito">
                     <a href="" class="visitados__link">Python</a>
                 </li>
-                <li class="visitados__item">
+                <li class="visitados__item item__dois">
                     <a href="" class="visitados__link">OO</a>
                 </li>
                 <li class="visitados__item">
@@ -201,13 +247,74 @@
 
     <footer>
         <section class="rodape">
-            <h4 class="rodape__titulo">Fique por dentro das novidades!</h4>
-            <h5 class="rodape__texto">Atualizações de e-books, novos livros, promoções e outros.</h5>
+            <div class="rodape__box">
+                <h4 class="rodape__titulo">Fique por dentro das novidades!</h4>
+                <h5 class="rodape__texto">Atualizações de e-books, novos livros, promoções e outros.</h5>
+            </div>
+
             <input type="email" class="rodape__campo" placeholder="Cadastre seu e-mail">
         </section>
 
         <section class="mencoes">
             <h5 class="mencoes__titulo">Grupo Alura</h5>
+
+            <ul class="mencoes__lista">
+                <li>EDUCAÇÃO</li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/Caelum.svg" alt="Caelum">Caelum</a>
+                </li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/CasaDoCodigo.svg" alt="Casa do Código">Casa do Código</a>
+                </li>
+            </ul>
+            <ul class="mencoes__lista">
+                <li>EDUCAÇÃO ONLINE</li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/Alura.svg" alt="Alura">Alura</a>
+                </li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/AluraEmpresas.svg" alt="Alura para Empresas">Alura para Empresas</a>
+                </li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/AluraLATAM.svg" alt="Alura Latam">Alura Latam</a>
+                </li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/AluraStart.svg" alt="Alura Start">Alura Start</a>
+                </li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/MusicDot.svg" alt="MusicDot">MusicDot</a>
+                </li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/AluraLingua.svg" alt="Alura Lingua">Alura Lingua</a>
+                </li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/PM3.svg" alt="PM3">PM3</a>
+                </li>
+            </ul>
+            <ul class="mencoes__lista">
+                <li>COMUNIDADE</li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/HipstersTech.svg" alt="Hipsters Ponto Tech">Hipsters Ponto Tech</a>
+                </li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/ScubaDev.svg" alt="Scuba Dev">Scuba Dev</a>
+                </li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/LayersTech.svg" alt="Layers Ponto Tech">Layers Ponto Tech</a>
+                </li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/LikeABoss.svg" alt="Like a Boss">Like a Boss</a>
+                </li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/CarreiraSemFronteira.svg" alt="Carreira sem Fronteiras">Carreira sem Fronteiras</a>
+                </li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/HipstersJobs.svg" alt="Hipsters ponto Jobs">Hipsters ponto Jobs</a>
+                </li>
+                <li>
+                    <a class="mencoes__lista-item" href=""><img src="./img/Icones Rodapé/GUJ.svg" alt="GUJ">GUJ</a>
+                </li>
+            </ul>
         </section>
     </footer>
 
@@ -220,12 +327,17 @@
 
             // Default parameters
             slidesPerView: 3,
-            spaceBetween: 15,
+            spaceBetween: 75,
 
             // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
+            },
+            
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         });
     </script>
