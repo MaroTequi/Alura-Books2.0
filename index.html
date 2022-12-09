@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles.css">
     <title>AluraBooks</title>
 </head>
 <body>
@@ -88,10 +88,14 @@
                 <a href="#"><img src="./img/Favoritos.svg" alt="Favoritos"></a>
             </li>
             <li>
-                <a href="#"><img src="./img/Compras.svg" alt="Sacola"></a>
+                <a class="cabecalho__opcoes-icones" href="#"><img src="./img/Compras.svg" alt="Sacola">
+                <t class="cabecalho__opcoes-texto">Minha sacola</t>
+            </a>
             </li>
             <li>
-                <a href="#"><img src="./img/Usuario.svg" alt="Minha Conta"></a>
+                <a class="cabecalho__opcoes-icones" href="#"><img src="./img/Usuario.svg" alt="Minha Conta">
+                <t class="cabecalho__opcoes-texto">Meu perfil</t>
+            </a>
             </li>
         </ul>
 
@@ -113,7 +117,6 @@
             
             <!-- Slider main container -->
             <div class="swiper">
-
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
 
@@ -163,6 +166,7 @@
                     <img class="card__img" src="./img/Perfil-Escritora.png" alt="Logo Livro">
                     <a class="card__botao" href="">Saiba mais</a>
                 </div>
+            </div>
 
         </section>
         
@@ -327,7 +331,6 @@
 
             // Default parameters
             slidesPerView: 3,
-            spaceBetween: 75,
 
             // If we need pagination
             pagination: {

@@ -17,6 +17,8 @@
 
     --fonte-poppins: 'Poppins';
     --font-josefin: 'Josefin Sans';
+
+    --space-books-card: 10em;
 }
 
 body {
