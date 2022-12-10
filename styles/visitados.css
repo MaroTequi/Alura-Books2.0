@@ -1,0 +1,35 @@
+.visitados {
+    background: var(--azul-gradiente);
+    padding: 1.5rem 0;
+}
+
+.visitados__titulo {
+    padding-bottom: 1rem;
+    
+    color: var(--branco);
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.visitados__opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+.visitados__opcoes___item {    
+    background-color: var(--laranja);
+    padding: 16px 24px;
+}
+
+.visitados__opcoes___link {
+
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
