@@ -1,10 +1,16 @@
+.visitados__titulo,
+.visitados__opcoes {
+    max-width: 428px;
+    margin: auto;
+}
+
 .visitados {
     background: var(--azul-gradiente);
-    padding: 1.5rem 0;
+    padding: 2.5rem 0;
 }
 
 .visitados__titulo {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     
     color: var(--branco);
     text-align: center;
@@ -14,19 +20,22 @@
 }
 
 .visitados__opcoes {
+    height: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: space-between;
 
     gap: 1rem;
 }
 
-.visitados__opcoes___item {    
-    background-color: var(--laranja);
-    padding: 16px 24px;
+.visitados__opcoes___item {
+    box-sizing: content-box;
 }
 
 .visitados__opcoes___link {
+    background-color: var(--laranja);
+    padding: 16px 24px;
 
     color: var(--branco);
     font-weight: 700;

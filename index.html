@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles.css">
 
     <title>AluraBooks</title>
 </head>
 <body>
     <header class="cabecalho">
+        <!-- Parte esquerda -->
         <div class="cabecalho__esquerda">
             <input type="checkbox" id="marcador">
-            <label for="marcador">
+            <label for="marcador" class="cabecalho__esquerda___cor">
                 <span class="cabecalho__gaveta"></span>
             </label>
 
             <ul class="cabecalho__gaveta___aberta">
-                <li class="cabecalho__gaveta___item">
-                    <a class="cabecalho__gaveta___link" href="">Categorias</a>
-                </li>
+                <li class="cabecalho__gaveta___item cabecalho__gaveta___categorias">Categorias</li>
                 <li class="cabecalho__gaveta___item">
                     <a class="cabecalho__gaveta___link" href="">PROGRAMAÇÃO</a>
                 </li>
@@ -39,9 +39,12 @@
                 </li>
             </ul>
 
-            <img src="./img/Logo.svg" alt="Logo AluraBooks">
+            <a href="./index.html">
+                <img src="./img/Logo.svg" alt="Logo AluraBooks">
+            </a>
         </div>
 
+        <!-- Parte direita -->
         <ul class="cabecalho__opcoes">
             <li>
                 <a href="">
@@ -70,6 +73,57 @@
 
         <section class="lancamentos">
             <h1 class="titulo">ÚLTIMOS LANÇAMENTOS</h1>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./img/livros/Acessibilidade.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./img/livros/Angular.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./img/livros/ApacheKafka.svg" alt="ApacheKafka">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./img/livros/Arquitetura.svg" alt="Arquitetura">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./img/livros/Construct2.svg" alt="Construct2">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./img/livros/Gestão2.svg" alt="Gestão2">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./img/livros/Gestão.svg" alt="Gestão">
+                        </a>
+                    </div>
+                </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
             <!-- CARD -->
             <div class="card">
                 <!-- linha 1 -->
@@ -107,6 +161,58 @@
 
         <section class="vendidos">
             <h1 class="titulo">MAIS VENDIDOS</h1>
+
+            
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./img/livros/Acessibilidade.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./img/livros/Angular.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./img/livros/ApacheKafka.svg" alt="ApacheKafka">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./img/livros/Arquitetura.svg" alt="Arquitetura">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./img/livros/Construct2.svg" alt="Construct2">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./img/livros/Gestão2.svg" alt="Gestão2">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <img src="./img/livros/Gestão.svg" alt="Gestão">
+                        </a>
+                    </div>
+                </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
 
             <!-- CARD -->
             <div class="card">
@@ -185,5 +291,22 @@
     <footer class="rodape">
         <p class="rodape__texto">Grupo Alura</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            
+            // Default parameters
+            slidesPerView: 3,
+            
+            speed: 400,
+            spaceBetween: 10,
+
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });      
+    </script>
 </body>
 </html>

@@ -1,3 +1,10 @@
+.banner__titulo,
+.banner__texto,
+.banner__busca {
+    max-width: 428px;
+    margin: auto;
+}
+
 .banner, .banner__busca, .banner__busca::placeholder {
     text-align: center;
     color: var(--branco);
@@ -24,7 +31,7 @@
 }
 
 .banner__texto {
-    margin: 1rem 0;
+    margin: 1rem auto;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;

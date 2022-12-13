@@ -1,6 +1,8 @@
 .novidades {
+    max-width: 428px;
     color: var(--azul-gradiente);
     padding: 1rem;
+    margin: auto;
 }
 
 .novidades__titulo {
