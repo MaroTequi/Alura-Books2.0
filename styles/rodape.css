@@ -10,3 +10,43 @@
     font-size: 16px;
     line-height: 24px;
 }
+
+.rodape__menu {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+        gap: 9rem;
+
+        max-width: 1024px;
+        padding: 56px 24px;
+    }
+
+    .rodape__texto {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .rodape__menu {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    .rodape__menu___item {
+        margin-bottom: 0.5rem;
+    }
+
+    .rodape__menu___item:first-child {
+        margin-bottom: 2rem;
+    }
+
+    .rodape__menu___link {
+        display: flex;
+        align-items: center;
+        box-sizing: content-box;
+        gap: 1rem;
+    }
+}

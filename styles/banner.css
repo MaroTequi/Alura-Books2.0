@@ -51,3 +51,32 @@
 
     opacity: 100%;
 }
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        height: 325px;
+        padding-top: 84px;
+    }
+
+    .banner__titulo
+    ,.banner__texto{
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .banner__texto {
+        margin-bottom: 26px;
+    }
+
+    .banner__busca {
+        max-width: 476px;
+        margin: auto;
+    }
+
+    .banner__titulo {
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+
+}

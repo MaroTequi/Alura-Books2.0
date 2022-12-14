@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 1rem;
     height: 100%;
 }
 
@@ -100,4 +100,95 @@
     margin-right: 1.5rem;
     align-items: center;
     gap: 2rem;
+}
+
+#marcador-meio,
+.cabecalho__gaveta___aberta-meio,
+.cabecalho__esquerda___titulo,
+.cabecalho__menu {
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+
+    .cabecalho {
+        --dist-4rem: 4rem;
+        max-width: 1024px;
+    }
+
+    /* Parte Esquerda */
+    .cabecalho__esquerda {
+        margin-left: var(--dist-4rem);
+    }
+
+    .cabecalho__esquerda___cor {
+        display: none;
+    }
+
+    .cabecalho__logo {
+        display: flex;
+        align-items: flex-end;
+        gap: 11px;
+    }
+
+    .cabecalho__esquerda___titulo {
+        display: block;
+        font-family: var(--font-josefin);
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .cabecalho__esquerda___titulo strong{
+        font-weight: 700;
+    }
+
+    /* Parte Meio */
+    .cabecalho__menu {
+        position: relative;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    #marcador-meio:checked
+    + .cabecalho__gaveta___aberta-item {
+        color: var(--branco);
+        background: var(--azul-gradiente);
+    }
+
+    #marcador-meio:checked
+    ~.cabecalho__gaveta___aberta-meio {
+        width: 179px;
+        top: 100%;
+        position: absolute;
+        display: block;
+        z-index: 31;
+    }
+
+    .cabecalho__gaveta___aberta-link {
+        justify-content: center;
+    }
+    
+    .cabecalho__gaveta___aberta-link:hover {
+        cursor: pointer;
+    }
+
+    .cabecalho__gaveta___aberta-item,
+    .cabecalho__gaveta___aberta-link {
+        width: 120px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Parte Direta */
+    .cabecalho__opcoes {
+        gap: 4rem;
+        margin-right: var(--dist-4rem);
+    }
+
+    .cabecalho__coracao {
+        display: none;
+    }
 }

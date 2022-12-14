@@ -16,3 +16,13 @@
 .swiper-button-next {
     display: none;
 }
+
+@media screen and (min-width: 1024px) {
+    .swiper {
+        max-width: 724px;
+    }
+
+    .swiper-pagination {
+        margin-bottom: 3rem;
+    }
+}

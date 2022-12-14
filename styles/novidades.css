@@ -39,3 +39,32 @@
 
     opacity: 100%;
 }
+
+@media screen and (min-width: 724px) {
+    .novidades {
+        max-width: 724px;
+        height: 216px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+
+        padding: 2rem 0;
+    }
+
+    .novidades__titulo,
+    .novidades__texto,
+    .novidades__email {
+        width: 50%;
+    }
+
+    .novidades__titulo {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .novidades__email {
+        padding: 10px 56px;
+    }
+}

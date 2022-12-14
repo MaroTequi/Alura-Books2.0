@@ -42,3 +42,32 @@
     font-size: 14px;
     line-height: 21px;
 }
+
+@media screen and (min-width: 1024px) {
+    .visitados__titulo,
+    .visitados__opcoes {
+        max-width: 490px;
+    }
+
+    .visitados__opcoes {
+        height: 90px;
+        justify-content: space-between;
+    }
+
+    .visitados__titulo {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .visitados__opcoes___item:nth-child(1) {
+        order: -5;
+    }
+
+    .visitados__opcoes___item:nth-child(1) {
+        order: 1;
+    }
+
+    .visitados__opcoes___item:nth-child(7) {
+        order: -4;
+    }
+}
