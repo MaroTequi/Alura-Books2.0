@@ -20,7 +20,8 @@ font-family: 'Poppins', sans-serif; */
     --cinza-claro: #EBECEE;
     --branco: white;
 
-    --fonte-quatorze: 14px;
+    --fonte-quatorze: 14px;    
+    --tamanho-laterais-lancamento: 140px;
 
     --font-poppins: 'Poppins';
     --font-josefin: 'Josefin Sans';
@@ -68,5 +69,16 @@ p {
     .titulo {
         font-size: 26px;
         line-height: 39px;
+    }
+}
+
+@media screen and (min-width: 1724px) {
+    .titulo {
+        width: 100%;
+        font-size: 32px;
+        line-height: 48px;
+
+        padding: 2rem 0 3rem;
+        margin-bottom: 4rem;
     }
 }

@@ -26,3 +26,13 @@
         margin-bottom: 3rem;
     }
 }
+
+@media screen and (min-width: 1724px) {
+    .swiper{
+        margin-left: var(--tamanho-laterais-lancamento);
+    }
+
+    .swiper-pagination {
+        margin-bottom: 2rem;
+    }
+}

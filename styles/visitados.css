@@ -71,3 +71,40 @@
         order: -4;
     }
 }
+
+@media screen and (min-width: 1724px) {
+    .visitados {
+        height: 400px;
+        box-sizing: border-box;
+    }
+
+    .visitados__titulo,
+    .visitados__opcoes {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .visitados__titulo {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 40px;
+    }
+
+    .visitados__opcoes {
+        height: 155px;
+    }
+
+    .visitados__opcoes___link {
+        font-size: 24px;
+        line-height: 36px;
+        padding: 24px 32px;
+    }
+
+    .visitados__opcoes___item:nth-child(1) {
+        order: -2;
+    }
+
+    .visitados__opcoes___item:nth-child(7) {
+        order: -1;
+    }
+}

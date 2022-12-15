@@ -68,3 +68,13 @@
         padding: 10px 56px;
     }
 }
+
+@media screen and (min-width: 1724px) {
+    .novidades {
+        max-width: 850px;
+    }
+
+    .novidades__email {
+        max-width: 400px;
+    }
+}

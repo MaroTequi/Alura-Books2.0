@@ -99,6 +99,26 @@
         max-width: 588px;
         margin-top: 4rem;
     }
+}
 
+@media screen and (min-width: 1724px) {
+    .card {
+        margin-top: 2rem;
+        margin-right: var(--tamanho-laterais-lancamento);
+        box-sizing: content-box;
+    }
+    
+    .card__cima___texto h2 {
+        font-size: 32px;
+        line-height: 48px;
+    }
 
+    .card__cima___texto h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .card__cima___img {
+        margin-left: 4rem;
+    }
 }

@@ -105,7 +105,8 @@
 #marcador-meio,
 .cabecalho__gaveta___aberta-meio,
 .cabecalho__esquerda___titulo,
-.cabecalho__menu {
+.cabecalho__menu,
+.cabecalho__opcoes___links h2{
     display: none;
 }
 
@@ -191,4 +192,20 @@
     .cabecalho__coracao {
         display: none;
     }
+}
+
+@media screen and (min-width: 1728px) {
+    .cabecalho {
+        max-width: 1728px;
+        justify-content: space-around;
+    }
+
+    .cabecalho__opcoes___links{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        font-size: 20px;
+    }
+
 }
